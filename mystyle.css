@@ -1,8 +1,17 @@
+:root {
+  --main-green: #50c878;
+  --light-blue: #add8e6;
+  --dark-green: #2e8b57;
+  --main-yellow: #ffff00;
+  --main-orange: #ffa500;
+  --main-white: #ffffff;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 2em;
-  background-color: #add8e6;
+  background-color: var(--light-blue);
   padding: 2em;
 }
 
@@ -20,7 +29,7 @@ article {
 }
 
 aside {
-  background-color: #50c878;
+  background-color: var(--main-green);
   grid-row: 2;
   width: 100%;
   grid-column: 1 / span 1;
@@ -30,7 +39,7 @@ aside {
 
 header,
 footer {
-  background-color: #2e8b57;
+  background-color: var(--dark-green);
   text-align: center;
 }
 
@@ -47,16 +56,16 @@ footer {
 img {
   max-width: 30%;
   height: 3em;
-  background-color: #ffff00;
+  background-color: var(--main-yellow);
 }
 
 .orange-class {
-  background-color: #ffa500;
+  background-color: var(--main-orange);
   grid-column: 2 / span 2;
   grid-row: 2;
 }
 
 body {
-  color: #ffffff;
+  color: var(--main-white);
   font-size: 1em;
 }
